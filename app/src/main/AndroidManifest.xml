@@ -30,13 +30,37 @@
             </intent-filter>
         </activity>
         <activity android:name=".NumbersActivity"
-            android:label="@string/numbersActivity"/>
+            android:label="@string/numbersActivity"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".FamilyMembersActivity"
-            android:label="@string/familyActivity"/>
+            android:label="@string/familyActivity"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".ColorsActivity"
-            android:label="@string/colorsActivity"/>
+            android:label="@string/colorsActivity"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".PhrasesActivity"
-            android:label="@string/phrasesActivity"/>
+            android:label="@string/phrasesActivity"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
